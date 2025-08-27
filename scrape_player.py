@@ -154,38 +154,57 @@ def parse_sidearm_profile(html_text: str, page_url: str, input_name: str) -> Dic
     soup = BeautifulSoup(html_text, "lxml")
 
     # --- Name: try many sources, then pick the one closest to input_name
-    h1 = soup.select_one("h1")
-    og_title = soup.select_one('meta[property="og:title"]')
-    twitter_title = soup.select_one('meta[name="twitter:title"]')
+    # First, try the specific Sidearm player name structure
+    player_name_span = soup.select_one('.sidearm-roster-player-name')
+    if player_name_span:
+        first_name_span = player_name_span.select_one('.sidearm-roster-player-first-name')
+        last_name_span = player_name_span.select_one('.sidearm-roster-player-last-name')
+        if first_name_span and last_name_span:
+            first_name = norm(first_name_span.get_text(" "))
+            last_name = norm(last_name_span.get_text(" "))
+            player_name = f"{first_name} {last_name}"
+            if player_name:
+                name_final = player_name
+            else:
+                # Fallback to the full span text
+                name_final = norm(player_name_span.get_text(" "))
+        else:
+            # Fallback to the full span text
+            name_final = norm(player_name_span.get_text(" "))
+    else:
+        # Fallback to other sources if the specific structure isn't found
+        h1 = soup.select_one("h1")
+        og_title = soup.select_one('meta[property="og:title"]')
+        twitter_title = soup.select_one('meta[name="twitter:title"]')
 
-    # JSON-LD person?
-    jsonld_names = []
-    for tag in soup.select('script[type="application/ld+json"]'):
-        try:
-            data = json.loads(tag.text)
-            if isinstance(data, dict) and data.get("@type") in ("Person","Athlete"):
-                if "name" in data: jsonld_names.append(norm(data["name"]))
-            if isinstance(data, list):
-                for d in data:
-                    if isinstance(d, dict) and d.get("@type") in ("Person","Athlete") and "name" in d:
-                        jsonld_names.append(norm(d["name"]))
-        except Exception:
-            pass
+        # JSON-LD person?
+        jsonld_names = []
+        for tag in soup.select('script[type="application/ld+json"]'):
+            try:
+                data = json.loads(tag.text)
+                if isinstance(data, dict) and data.get("@type") in ("Person","Athlete"):
+                    if "name" in data: jsonld_names.append(norm(data["name"]))
+                if isinstance(data, list):
+                    for d in data:
+                        if isinstance(d, dict) and d.get("@type") in ("Person","Athlete") and "name" in d:
+                            jsonld_names.append(norm(d["name"]))
+            except Exception:
+                pass
 
-    # breadcrumb last item
-    crumb = None
-    crumbs = soup.select('nav[aria-label*="breadcrumb"] li, .breadcrumb li, .breadcrumbs li')
-    if crumbs:
-        crumb = norm(crumbs[-1].get_text(" "))
+        # breadcrumb last item
+        crumb = None
+        crumbs = soup.select('nav[aria-label*="breadcrumb"] li, .breadcrumb li, .breadcrumbs li')
+        if crumbs:
+            crumb = norm(crumbs[-1].get_text(" "))
 
-    title_texts = []
-    if h1: title_texts.append(norm(h1.get_text(" ")))
-    if og_title and og_title.get("content"): title_texts.append(norm(og_title["content"].split(" - ")[0]))
-    if twitter_title and twitter_title.get("content"): title_texts.append(norm(twitter_title["content"].split(" - ")[0]))
-    title_texts.extend(jsonld_names)
-    if crumb: title_texts.append(crumb)
+        title_texts = []
+        if h1: title_texts.append(norm(h1.get_text(" ")))
+        if og_title and og_title.get("content"): title_texts.append(norm(og_title["content"].split(" - ")[0]))
+        if twitter_title and twitter_title.get("content"): title_texts.append(norm(twitter_title["content"].split(" - ")[0]))
+        title_texts.extend(jsonld_names)
+        if crumb: title_texts.append(crumb)
 
-    name_final = best_match(input_name, title_texts) or (title_texts[0] if title_texts else None)
+        name_final = best_match(input_name, title_texts) or (title_texts[0] if title_texts else None)
 
     # --- Attributes
     meta_text = " ".join(x.get_text(" ") for x in soup.select(
