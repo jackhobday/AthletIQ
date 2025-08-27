@@ -145,51 +145,99 @@ async def sidearm_find_profile(client: httpx.AsyncClient, domain: str, name: str
 # ---------------- SIDEARM: fetch team stats for individual player ----------------
 
 async def fetch_player_stats_from_team_page(client: httpx.AsyncClient, domain: str, player_name: str, sport_path: str = SPORT_PATH) -> List[Dict[str, Any]]:
-    """Fetch individual player statistics from the team stats page."""
+    """Fetch individual player statistics from the team stats page for multiple seasons."""
     try:
-        # Try the team stats page
-        stats_url = f"https://{domain}/sports/{sport_path}/stats"
-        r = await fetch(client, stats_url)
-        soup = BeautifulSoup(r.text, "lxml")
+        # Try multiple seasons: 2024, 2023, 2022
+        seasons = ["2024", "2023", "2022"]
+        all_stats_rows = []
         
-        # Look for individual offensive statistics table
-        stats_rows = []
-        for table in soup.select("table"):
-            # Check if this table has the right headers for individual stats
-            headers = [norm(th.get_text(" ")).lower() for th in table.select("thead th")]
-            if not headers:
-                headers = [norm(th.get_text(" ")).lower() for th in table.select("tr th")]
+        for season in seasons:
+            try:
+                # Try season-specific URL
+                stats_url = f"https://{domain}/sports/{sport_path}/stats/{season}"
+                print(f"DEBUG: Trying season {season} at {stats_url}")
+                
+                r = await fetch(client, stats_url)
+                soup = BeautifulSoup(r.text, "lxml")
+                
+                # Look for individual offensive statistics table
+                for table in soup.select("table"):
+                    # Check if this table has the right headers for individual stats
+                    headers = [norm(th.get_text(" ")).lower() for th in table.select("thead th")]
+                    if not headers:
+                        headers = [norm(th.get_text(" ")).lower() for th in table.select("tr th")]
+                    
+                    # Look for tables with individual player stats (should have jersey numbers and player names)
+                    if any(h in ["#", "player", "name"] for h in headers) and any(h in ["gp", "g", "a", "pts"] for h in headers):
+                        for tr in table.select("tbody tr"):
+                            tds = tr.select("td")
+                            if not tds or len(tds) < 3:
+                                continue
+                            
+                            cells = [norm(td.get_text(" ")) for td in tds]
+                            if len(cells) < len(headers):
+                                continue
+                            
+                            # Check if this row contains our player
+                            row_text = " ".join(cells).lower()
+                            player_name_lower = player_name.lower()
+                            
+                            # Try to match player name in the row
+                            if (fuzz.partial_ratio(player_name_lower, row_text) >= 85 or 
+                                any(name_part in row_text for name_part in player_name_lower.split())):
+                                
+                                # Create a stats row with the available data
+                                row_data = dict(zip(headers[:len(cells)], cells))
+                                
+                                # Add season info
+                                row_data["_season"] = season
+                                row_data["_source"] = "team_stats_page"
+                                
+                                all_stats_rows.append(row_data)
+                                print(f"DEBUG: Found stats for {season}")
+                                break  # Found our player for this season
+                
+            except Exception as e:
+                print(f"DEBUG: Error fetching season {season}: {e}")
+                continue
+        
+        # If no season-specific data found, try the main stats page
+        if not all_stats_rows:
+            print(f"DEBUG: No season-specific data found, trying main stats page...")
+            stats_url = f"https://{domain}/sports/{sport_path}/stats"
+            r = await fetch(client, stats_url)
+            soup = BeautifulSoup(r.text, "lxml")
             
-            # Look for tables with individual player stats (should have jersey numbers and player names)
-            if any(h in ["#", "player", "name"] for h in headers) and any(h in ["gp", "g", "a", "pts"] for h in headers):
-                for tr in table.select("tbody tr"):
-                    tds = tr.select("td")
-                    if not tds or len(tds) < 3:
-                        continue
-                    
-                    cells = [norm(td.get_text(" ")) for td in tds]
-                    if len(cells) < len(headers):
-                        continue
-                    
-                    # Check if this row contains our player
-                    row_text = " ".join(cells).lower()
-                    player_name_lower = player_name.lower()
-                    
-                    # Try to match player name in the row
-                    if (fuzz.partial_ratio(player_name_lower, row_text) >= 85 or 
-                        any(name_part in row_text for name_part in player_name_lower.split())):
+            for table in soup.select("table"):
+                headers = [norm(th.get_text(" ")).lower() for th in table.select("thead th")]
+                if not headers:
+                    headers = [norm(th.get_text(" ")).lower() for th in table.select("tr th")]
+                
+                if any(h in ["#", "player", "name"] for h in headers) and any(h in ["gp", "g", "a", "pts"] for h in headers):
+                    for tr in table.select("tbody tr"):
+                        tds = tr.select("td")
+                        if not tds or len(tds) < 3:
+                            continue
                         
-                        # Create a stats row with the available data
-                        row_data = dict(zip(headers[:len(cells)], cells))
+                        cells = [norm(td.get_text(" ")) for td in tds]
+                        if len(cells) < len(headers):
+                            continue
                         
-                        # Add season info (this is current season data)
-                        row_data["_season"] = "2024"  # Current season
-                        row_data["_source"] = "team_stats_page"
+                        row_text = " ".join(cells).lower()
+                        player_name_lower = player_name.lower()
                         
-                        stats_rows.append(row_data)
-                        break  # Found our player, no need to check other tables
+                        if (fuzz.partial_ratio(player_name_lower, row_text) >= 85 or 
+                            any(name_part in row_text for name_part in player_name_lower.split())):
+                            
+                            row_data = dict(zip(headers[:len(cells)], cells))
+                            row_data["_season"] = "2024"  # Assume current season
+                            row_data["_source"] = "team_stats_page"
+                            
+                            all_stats_rows.append(row_data)
+                            print(f"DEBUG: Found stats from main page")
+                            break
         
-        return stats_rows
+        return all_stats_rows
         
     except Exception as e:
         print(f"Error fetching from team stats page: {e}")
@@ -434,23 +482,52 @@ if __name__ == "__main__":
             # Print header row
             print("Season\tGP\tGS\tG\tA\tPTS\tSH\tSH%\tSOG\tSOG%\tGW\tPK-ATT\tMIN")
             
-            # Print data rows
+            # Deduplicate and organize by season
+            season_data = {}
             for row in stats_rows:
                 season = row.get("_season", "Unknown")
-                gp = row.get("gp", "0")
-                gs = row.get("gs", "0")
-                g = row.get("g", "0")
-                a = row.get("a", "0")
-                pts = row.get("pts", "0")
-                sh = row.get("sh", "0")
-                sh_pct = row.get("sh%", "0.000")
-                sog = row.get("sog", "0")
-                sog_pct = row.get("sog%", "0.000")
-                gw = row.get("gw", "0")
-                pk_att = row.get("pg-pa", "0-0")  # Using pg-pa as PK-ATT
-                min_played = row.get("min", "0")
+                gp = int(row.get("gp", "0"))
+                gs = int(row.get("gs", "0"))
+                g = int(row.get("g", "0"))
+                a = int(row.get("a", "0"))
+                pts = int(row.get("pts", "0"))
+                sh = int(row.get("sh", "0"))
+                sog = int(row.get("sog", "0"))
+                gw = int(row.get("gw", "0"))
+                min_played = int(row.get("min", "0"))
                 
-                print(f"{season}\t{gp}\t{gs}\t{g}\t{a}\t{pts}\t{sh}\t{sh_pct}\t{sog}\t{sog_pct}\t{gw}\t{pk_att}\t{min_played}")
+                # Keep the row with higher GP (overall stats vs conference stats)
+                if season not in season_data or gp > season_data[season]["gp"]:
+                    season_data[season] = {
+                        "gp": gp, "gs": gs, "g": g, "a": a, "pts": pts,
+                        "sh": sh, "sog": sog, "gw": gw, "min": min_played,
+                        "sh_pct": row.get("sh%", "0.000"),
+                        "sog_pct": row.get("sog%", "0.000"),
+                        "pk_att": row.get("pg-pa", "0-0")
+                    }
+            
+            # Calculate career totals
+            total_gp = sum(data["gp"] for data in season_data.values())
+            total_gs = sum(data["gs"] for data in season_data.values())
+            total_g = sum(data["g"] for data in season_data.values())
+            total_a = sum(data["a"] for data in season_data.values())
+            total_pts = sum(data["pts"] for data in season_data.values())
+            total_sh = sum(data["sh"] for data in season_data.values())
+            total_sog = sum(data["sog"] for data in season_data.values())
+            total_gw = sum(data["gw"] for data in season_data.values())
+            total_min = sum(data["min"] for data in season_data.values())
+            
+            # Calculate percentages
+            total_sh_pct = f"{total_g/total_sh:.3f}" if total_sh > 0 else "0.000"
+            total_sog_pct = f"{total_sog/total_sh:.3f}" if total_sh > 0 else "0.000"
+            
+            # Print season data in order
+            for season in sorted(season_data.keys()):
+                data = season_data[season]
+                print(f"{season}\t{data['gp']}\t{data['gs']}\t{data['g']}\t{data['a']}\t{data['pts']}\t{data['sh']}\t{data['sh_pct']}\t{data['sog']}\t{data['sog_pct']}\t{data['gw']}\t{data['pk_att']}\t{data['min']}")
+            
+            # Print career totals
+            print(f"Total\t{total_gp}\t{total_gs}\t{total_g}\t{total_a}\t{total_pts}\t{total_sh}\t{total_sh_pct}\t{total_sog}\t{total_sog_pct}\t{total_gw}\t0-0\t{total_min}")
         else:
             print("No statistics available.")
     else:
