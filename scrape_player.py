@@ -142,6 +142,59 @@ async def sidearm_find_profile(client: httpx.AsyncClient, domain: str, name: str
             return candidates[0][1]
     return None
 
+# ---------------- SIDEARM: fetch team stats for individual player ----------------
+
+async def fetch_player_stats_from_team_page(client: httpx.AsyncClient, domain: str, player_name: str, sport_path: str = SPORT_PATH) -> List[Dict[str, Any]]:
+    """Fetch individual player statistics from the team stats page."""
+    try:
+        # Try the team stats page
+        stats_url = f"https://{domain}/sports/{sport_path}/stats"
+        r = await fetch(client, stats_url)
+        soup = BeautifulSoup(r.text, "lxml")
+        
+        # Look for individual offensive statistics table
+        stats_rows = []
+        for table in soup.select("table"):
+            # Check if this table has the right headers for individual stats
+            headers = [norm(th.get_text(" ")).lower() for th in table.select("thead th")]
+            if not headers:
+                headers = [norm(th.get_text(" ")).lower() for th in table.select("tr th")]
+            
+            # Look for tables with individual player stats (should have jersey numbers and player names)
+            if any(h in ["#", "player", "name"] for h in headers) and any(h in ["gp", "g", "a", "pts"] for h in headers):
+                for tr in table.select("tbody tr"):
+                    tds = tr.select("td")
+                    if not tds or len(tds) < 3:
+                        continue
+                    
+                    cells = [norm(td.get_text(" ")) for td in tds]
+                    if len(cells) < len(headers):
+                        continue
+                    
+                    # Check if this row contains our player
+                    row_text = " ".join(cells).lower()
+                    player_name_lower = player_name.lower()
+                    
+                    # Try to match player name in the row
+                    if (fuzz.partial_ratio(player_name_lower, row_text) >= 85 or 
+                        any(name_part in row_text for name_part in player_name_lower.split())):
+                        
+                        # Create a stats row with the available data
+                        row_data = dict(zip(headers[:len(cells)], cells))
+                        
+                        # Add season info (this is current season data)
+                        row_data["_season"] = "2024"  # Current season
+                        row_data["_source"] = "team_stats_page"
+                        
+                        stats_rows.append(row_data)
+                        break  # Found our player, no need to check other tables
+        
+        return stats_rows
+        
+    except Exception as e:
+        print(f"Error fetching from team stats page: {e}")
+        return []
+
 def guess_provider_from_html(html: str) -> Optional[str]:
     low = html.lower()
     if "sidearm" in low: return "sidearm"
@@ -321,6 +374,17 @@ async def find_and_scrape(name: str, school: str, sport_path: str = SPORT_PATH) 
 
         if provider == "sidearm":
             data = parse_sidearm_profile(html_text, str(r.url), name)
+            
+            # Try to get stats from team stats page if no stats found
+            if not data.get("stats_rows"):
+                print(f"DEBUG: No stats found in profile, trying team stats page...")
+                team_stats = await fetch_player_stats_from_team_page(client, domain, name, sport_path)
+                if team_stats:
+                    print(f"DEBUG: Found {len(team_stats)} stats rows from team page")
+                    data["stats_rows"] = team_stats
+                    data["stats_source"] = "team_stats_page"
+                else:
+                    print(f"DEBUG: No stats found in team stats page either")
         else:
             soup = BeautifulSoup(html_text, "lxml")
             inferred_name = best_match(
@@ -349,4 +413,46 @@ if __name__ == "__main__":
     name = sys.argv[1]
     school = sys.argv[2]
     result = asyncio.run(find_and_scrape(name, school))
-    print(json.dumps(result, indent=2, ensure_ascii=False))
+    
+    # Format output in the desired table format
+    if result.get("found"):
+        print(f"Name: {result.get('name', 'N/A')}")
+        print(f"Height: {result.get('height_cm', 'N/A')} cm")
+        print(f"Position: {result.get('position', 'N/A')}")
+        print(f"Class Year: {result.get('class_year', 'N/A')}")
+        print(f"Hometown: {result.get('hometown', 'N/A')}")
+        print()
+        print("Stats")
+        print()
+        
+        stats_rows = result.get("stats_rows", [])
+        if stats_rows:
+            print("Career Statistics")
+            print("Scoring Statistics")
+            print("Scoring Statistics")
+            
+            # Print header row
+            print("Season\tGP\tGS\tG\tA\tPTS\tSH\tSH%\tSOG\tSOG%\tGW\tPK-ATT\tMIN")
+            
+            # Print data rows
+            for row in stats_rows:
+                season = row.get("_season", "Unknown")
+                gp = row.get("gp", "0")
+                gs = row.get("gs", "0")
+                g = row.get("g", "0")
+                a = row.get("a", "0")
+                pts = row.get("pts", "0")
+                sh = row.get("sh", "0")
+                sh_pct = row.get("sh%", "0.000")
+                sog = row.get("sog", "0")
+                sog_pct = row.get("sog%", "0.000")
+                gw = row.get("gw", "0")
+                pk_att = row.get("pg-pa", "0-0")  # Using pg-pa as PK-ATT
+                min_played = row.get("min", "0")
+                
+                print(f"{season}\t{gp}\t{gs}\t{g}\t{a}\t{pts}\t{sh}\t{sh_pct}\t{sog}\t{sog_pct}\t{gw}\t{pk_att}\t{min_played}")
+        else:
+            print("No statistics available.")
+    else:
+        print(f"Player not found: {result.get('reason', 'Unknown error')}")
+        print(json.dumps(result, indent=2, ensure_ascii=False))
