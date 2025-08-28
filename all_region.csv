@@ -1,0 +1,888 @@
+Player Name,School Name,Region,Team,Year
+Ben Diffley,Williams College,I,First,2024
+Aidan Bagley,Johnson & Wales University,I,First,2024
+Max Clivio,Tufts University,I,First,2024
+Luke Madden,Middlebury College,I,First,2024
+Liam Gerken,Tufts University,I,First,2024
+Tyler Huck,Bowdoin College,I,First,2024
+Niall Murphy,Amherst College,I,First,2024
+Luke Peplowski,Hamilton College,I,First,2024
+Mohammad Nuhu,Amherst College,I,First,2024
+Fynn Hayton Ruffner,Amherst College,I,First,2024
+Matt Scoffone,Connecticut College,I,First,2024
+Peter Silvester,Connecticut College,I,Second,2024
+Ben Clark-Eden,Amherst College,I,Second,2024
+Will O'Brien,Middlebury College,I,Second,2024
+Logan Erickson-Potter,University of Massachusetts-Boston,I,Second,2024
+Colin Dugan,Middlebury College,I,Second,2024
+Pandelis Margaronis,Hamilton College,I,Second,2024
+Kadin Talho,Western Connecticut State,I,Second,2024
+Tife Agunloye,Bates College,I,Second,2024
+Xavier Canfin,Tufts University,I,Second,2024
+Joshua Joseph,Thomas College,I,Second,2024
+Gavin Randolph,Middlebury College,I,Second,2024
+Nikola Antic,Tufts University,I,Third,2024
+Valter Santiago,Anna Maria College,I,Third,2024
+Walker White,Babson College,II,First,2024
+Jude Sargent,United States Coast Guard Academy,II,First,2024
+Sam Kalishman,Babson College,II,First,2024
+Liam Goldstein,Babson College,II,First,2024
+Kento Abe,Babson College,II,First,2024
+Shikhar Motupally,Massachusetts Institute of Technology,II,First,2024
+Tiago Frazao,Endicott College,II,First,2024
+Daniel Goba,Salve Regina University,II,First,2024
+James Donaldson,Babson College,II,First,2024
+Aaron Vaz,Worcester Polytechnic Institute,II,First,2024
+Aki Freeman,United States Coast Guard Academy,II,First,2024
+Nathan Harlow,Suffolk University,II,Second,2024
+Tim Lynch,Endicott College,II,Second,2024
+Ryan Bell,Wheaton College (Mass.),II,Second,2024
+Jack Phelps,Suffolk University,II,Second,2024
+Jack Minor,Massachusetts Institute of Technology,II,Second,2024
+Jack Wildermann,Roger Williams University,II,Second,2024
+Reiner Osselmann-Chai,Brandeis University,II,Second,2024
+Connor Policarpio,Springfield College,II,Second,2024
+Francisco Valck,Suffolk University,II,Second,2024
+Alasdair Ferrier,Wheaton College (Mass.),II,Second,2024
+Theodore Bushara,Emerson College,II,Second,2024
+Quinton Wrabley,Brandeis University,II,Third,2024
+Andres Gonzalez,Brandeis University,II,Third,2024
+Christian Burkart,St. John Fisher University,III,First,2024
+Ryan Brown,St. John Fisher University,III,First,2024
+Alex Lessman,SUNY Cortland,III,First,2024
+Joe Vogt,SUNY Geneseo,III,First,2024
+John Hayes,Plattsburgh State University,III,First,2024
+Mateo Marra,SUNY Cortland,III,First,2024
+Manuel Prieto,Buffalo State College,III,First,2024
+Arden Tobolski,Vassar College,III,First,2024
+Jared Fiske,Vassar College,III,First,2024
+Diego Rivera,Buffalo State College,III,First,2024
+Matt Shultz,SUNY Cortland,III,First,2024
+Ali Somow,SUNY Oneonta,III,First,2024
+George Charalambous,St. Lawrence University,III,Second,2024
+Santino Lupica-Tondo,University of Rochester,III,Second,2024
+Brian Coughlan,Plattsburgh State University,III,Second,2024
+Salvador Gomes,Buffalo State College,III,Second,2024
+Ryan Fitzgerald,Nazareth College,III,Second,2024
+Milos Bisenic,University of Rochester,III,Second,2024
+Jacob McGinnis,St. John Fisher University,III,Second,2024
+Jake Pawlika,Nazareth College,III,Second,2024
+Henry Brown,St. Lawrence University,III,Second,2024
+Drew Decker,Nazareth College,III,Second,2024
+Max Mogul,St. Lawrence University,III,Second,2024
+Jhonny Theze,SUNY Polytechnic Insititute,III,Second,2024
+Jacob Raphan,Vassar College,III,Third,2024
+Jackson Hall,Vassar College,III,Third,2024
+HaJoon Lee,SUNY Oswego,III,Third,2024
+Alberto Molina,SUNY New Paltz,III,Third,2024
+Kyle Gehnrich,SUNY Oswego,III,Third,2024
+Derek Marques,SUNY Oneonta,III,Third,2024
+Thomas Nimineh,SUNY Polytechnic Insititute,III,Third,2024
+LaZai Outerbridge,Hobart College,III,Third,2024
+Joey Avallone,St. John Fisher University,III,Third,2024
+Russ Domm,College at Brockport,III,Third,2024
+Luigi Prosperi,SUNY Oneonta,III,Third,2024
+Christian Micheli,SUNY New Paltz,III,Fourth,2024
+Adrian Matute,SUNY Oneonta,III,Fourth,2024
+Jackson Allen,Vassar College,III,Fourth,2024
+Kol Bassuck,University of Rochester,III,Fourth,2024
+Jack Pinnata,SUNY Cortland,III,Fourth,2024
+Nate Masucci,SUNY Oneonta,III,Fourth,2024
+Stefen Nikolic,SUNY Geneseo,III,Fourth,2024
+Nick Swanger,University of Rochester,III,Fourth,2024
+Alex Wyant,SUNY New Paltz,III,Fourth,2024
+Brian Taylor,SUNY Fredonia,III,Fourth,2024
+Max Voyer,College at Brockport,III,Fourth,2024
+Alessio Cristanetti-Walker,University of Rochester,III,Fourth,2024
+Jimmy Shensky,DeSales University,IV,First,2024
+Ian Chesney,Montclair State University,IV,First,2024
+Turlough Gartlan,Rowan University,IV,First,2024
+Ethan Hagen,Stevens Institute of Technology,IV,First,2024
+Moses Beers,Cairn University,IV,First,2024
+Ryan Cleary,Rowan University,IV,First,2024
+Liam MacDonald,DeSales University,IV,First,2024
+Jesse Brittain,Cairn University,IV,First,2024
+Erick Cortes,Rutgers University-Newark,IV,First,2024
+Nathan Prex,Lebanon Valley College,IV,First,2024
+Johnny Troiano,Rowan University,IV,First,2024
+Dominic Ridge,Kean University,IV,Second,2024
+Tommy DeGeyter,Pennsylvania College of Technology,IV,Second,2024
+Eric Swen,Rutgers University-Camden,IV,Second,2024
+Terry Thompson,Stevens Institute of Technology,IV,Second,2024
+Drew Weaver,Misericordia University,IV,Second,2024
+Davide Caputo,Rowan University,IV,Second,2024
+Genti Dauti,Fairleigh Dickinson University-Florham,IV,Second,2024
+Osbin Mendez,Montclair State University,IV,Second,2024
+Ernst Louisius,Stockton University,IV,Second,2024
+Gianfranco Ponce,Ramapo College,IV,Second,2024
+Drilon Toska,Fairleigh Dickinson University-Florham,IV,Second,2024
+Brendan Werner,Penn State University-Abington,IV,Third,2024
+Jack Nelson,St. Mary's College of Maryland,IV,Third,2024
+Max Mattioni,Juniata College,V,First,2024
+Mikkel Andersen,Johns Hopkins University,V,First,2024
+Logan Campbell,University of Scranton,V,First,2024
+Jarec Morlote,Messiah University,V,First,2024
+Ethan Jarden,Dickinson College,V,First,2024
+Koa Kaliebe,Franklin & Marshall College,V,First,2024
+Francis Meyer,Johns Hopkins University,V,First,2024
+Ryan Cogill,Alvernia University,V,First,2024
+Saul Iwowo,Dickinson College,V,First,2024
+Shawn Tanaka,Juniata College,V,First,2024
+Holden Woodings,Catholic University,V,First,2024
+Adam Carter,Messiah University,V,Second,2024
+Liam Giblin,Catholic University,V,Second,2024
+Samuel Roberts,Muhlenberg College,V,Second,2024
+Evan Schlotterbeck,Muhlenberg College,V,Second,2024
+Nicholas Dwamena,Dickinson College,V,Second,2024
+Len Yamabe,Swarthmore College,V,Second,2024
+Matt Zeiders,York College (Pa.),V,Second,2024
+Sean Fatiga,Widener University,V,Second,2024
+Patrick Lee,Messiah University,V,Second,2024
+Will Sangpachatanaruk,Johns Hopkins University,V,Second,2024
+Leanardo Torres,Marymount University,V,Second,2024
+Jake Bono,York College (Pa.),V,Third,2024
+Connor Anderko,Franklin & Marshall College,V,Third,2024
+Jackson Haynes,Swarthmore College,V,Third,2024
+Dylan Marco,York College (Pa.),V,Third,2024
+Gavin Rauhut,Juniata College,V,Third,2024
+Kevin Adams,Muhlenberg College,V,Third,2024
+Jaeden Asare,Lycoming College,V,Third,2024
+Domenico Caltabiano,Catholic University,V,Third,2024
+Michael Adekanmbi,Goucher College,V,Third,2024
+Timi Omoniwa,Dickinson College,V,Third,2024
+Christian Woobay,Lycoming College,V,Third,2024
+Tate Roth,McDaniel College,V,Fourth,2024
+Aidan McMillan,Moravian University,V,Fourth,2024
+Thomas Smith,Elizabethtown College,V,Fourth,2024
+Dermot Williamson,York College (Pa.),V,Fourth,2024
+Jack Borden,Franklin & Marshall College,V,Fourth,2024
+Erick Schoetter-Rojas,Marymount University,V,Fourth,2024
+Brandon Marzula,Juniata College,V,Fourth,2024
+Zeke Zambrano,Alvernia Universtiy,V,Fourth,2024
+Christian Bowles,Albright College,V,Fourth,2024
+Ciaran Corr,University of Scranton,V,Fourth,2024
+Simeon Dorsey,Muhlenberg College,V,Fourth,2024
+Freddy Rogers,University of Mary Washington,VI,First,2024
+Benjamin Velasquez,University of Lynchburg,VI,First,2024
+Daniel Amah,Oglethorpe University,VI,First,2024
+PJ Ryan,Washington & Lee University,VI,First,2024
+Nelsar Castillo,University of Mary Washington,VI,First,2024
+Alex Moody,Virginia Wesleyan University,VI,First,2024
+Manzi Shalita,University of Lynchburg,VI,First,2024
+Carter Berg,University of Mary Washington,VI,First,2024
+Weyimi Agbeyegbe,Washington & Lee University,VI,First,2024
+Sammy Amorose,University of Mary Washington,VI,First,2024
+Ben Alram,Oglethorpe University,VI,First,2024
+Thomas Viscuso,University of Lynchburg,VI,Second,2024
+Eli Pilcher,Rhodes College,VI,Second,2024
+Finnegan Deem-Ranzetta,Centre College,VI,Second,2024
+Gavin Beaupre,William Peace University,VI,Second,2024
+Josh Nevins,Virginia Wesleyan University,VI,Second,2024
+Nathan Yared,Shenendoah University,VI,Second,2024
+Adrian Levy,Oglethorpe University,VI,Second,2024
+Luke Grant,Rhodes College,VI,Second,2024
+Kade Theunissen,Covenant College,VI,Second,2024
+Tiago Feler,North Carolina Wesleyan University,VI,Second,2024
+Jorge Lemus,William Peace University,VI,Second,2024
+Will Joseph,Washington & Lee University,VI,Third,2024
+Aaron Deans,Virginia Wesleyan University,VI,Third,2024
+Parker Rody,Covenant College,VI,Third,2024
+Bastien Dechamps,North Carolina Wesleyan University,VI,Third,2024
+Jordy Santana,University of Mary Washington,VI,Third,2024
+Carson Evans,North Carolina Wesleyan University,VI,Third,2024
+AJ Daniels,Centre College,VI,Third,2024
+Dimitri Tulloch,Washington & Lee University,VI,Third,2024
+Tracy Moon,Berry College,VI,Third,2024
+Ryan Lynch,Brevard College,VI,Third,2024
+Chinedu Ikem,Shenendoah University,VI,Third,2024
+Nathan Slota,Rhodes College,VI,Fourth,2024
+Andy Guzman,Berry College,VI,Fourth,2024
+Asher Kuzemka,Christopher Newport University,VI,Fourth,2024
+William Casey,University of Lynchburg,VI,Fourth,2024
+Ryan Pidgeon,Roanoke College,VI,Fourth,2024
+Zach Whelan,University of Lynchburg,VI,Fourth,2024
+Matthew Jenkins,Washington & Lee University,VI,Fourth,2024
+Tyler Cozzie,Sewanee-University of the South,VI,Fourth,2024
+Michael Ramsey,Roanoke College,VI,Fourth,2024
+Ben Novello,Rhodes College,VI,Fourth,2024
+Riley Queen,Bridgewater College,VI,Fourth,2024
+Tommy Prokos,Denison University,VII,First,2024
+Henri Heyes,Denison University,VII,First,2024
+Jack Leahy,SUNY Alfred,VII,First,2024
+Matt Nguyen,Kenyon College,VII,First,2024
+Brady West,Ohio Wesleyan University,VII,First,2024
+Nicholas Graeca,John Carroll University,VII,First,2024
+Kameron Kist,Denison University,VII,First,2024
+William Shaffer,Ohio Northern University,VII,First,2024
+Carter Hancock,University of Mount Union,VII,First,2024
+Jake Krueger,Denison University,VII,First,2024
+Ryan Sommerfeld,Ohio Northern University,VII,First,2024
+Jason Villalobos,Otterbein University,VII,Second,2024
+Daniel Kalic,John Carroll University,VII,Second,2024
+Drew Vaughn,Anderson University,VII,Second,2024
+Noah Zebrak,Ohio Northern University,VII,Second,2024
+Dylan Barnes,Transylvania University,VII,Second,2024
+Louis Bez,Mount Aloysius College,VII,Second,2024
+Jacob Deever,Capital University,VII,Second,2024
+Jagger Brooker,Ohio Wesleyan University,VII,Second,2024
+Lucas Cross,Franciscan University,VII,Second,2024
+Nick Isaac,Otterbein University,VII,Second,2024
+Ted Almeter,Grove City College,VII,Third,2024
+Aiden Miller,Franciscan University,VII,Third,2024
+Mason Escalante,Wheaton College (Ill.),VIII,First,2024
+Hugo Neborg,North Park University,VIII,First,2024
+Quentin Gomez,WashIngton University (Mo.),VIII,First,2024
+Cole Pauly,Hope College,VIII,First,2024
+Cristian Torres-Gale,Edgewood College,VIII,First,2024
+Alex White,Calvin University,VIII,First,2024
+Jaziel Enriquez,Aurora University,VIII,First,2024
+Pryse Anderson,Wheaton College (Ill.),VIII,First,2024
+Connor Gage,Edgewood College,VIII,First,2024
+Enrique Gonzalez,Aurora University,VIII,First,2024
+Miguel Konde Gwo,Edgewood College,VIII,First,2024
+Daniel Hesselbein,Hope College,VIII,Second,2024
+Dylan Alic,Dominican University (Ill.),VIII,Second,2024
+Nacho Diaz,Millikin University,VIII,Second,2024
+Jacob Goodling,Calvin University,VIII,Second,2024
+Jack Knight,Edgewood College,VIII,Second,2024
+Lyndon Hu,University of Chicago,VIII,Second,2024
+Mickey Reilly,Carthage College,VIII,Second,2024
+Zach Susee,WashIngton University (Mo.),VIII,Second,2024
+Aidan Crowder,Carthage College,VIII,Second,2024
+Kyle Johnson,Wheaton College (Ill.),VIII,Second,2024
+Seth Walters,Hope College,VIII,Second,2024
+Puma Galvan,Wisconsin Lutheran University,VIII,Third,2024
+Steven Arthur,Milwaukee School of Engineering,VIII,Third,2024
+Teo Helm,North Park University,VIII,Third,2024
+Tommaso Polidori,North Central College,VIII,Third,2024
+Riley Stevens,Edgewood College,VIII,Third,2024
+Jostein Blindheim,North Park University,VIII,Third,2024
+Bastian Eikeland,North Park University,VIII,Third,2024
+Oscar Montejano,Dominican University (Ill.),VIII,Third,2024
+Mustafa Almohammedawi,Spalding University,VIII,Third,2024
+Xtreme Hauk,Calvin University,VIII,Third,2024
+Marti Solanellas,Carroll University (Wis.),VIII,Third,2024
+Luke Dillon,Webster University,VIII,Fourth,2024
+Daniel Szalai,North Central College,VIII,Fourth,2024
+Ian Frost,Milwaukee School of Engineering,VIII,Fourth,2024
+Frank Homa,Webster University,VIII,Fourth,2024
+Jack Leffel,Wisconsin Lutheran University,VIII,Fourth,2024
+Eduardo Cirilo,North Park University,VIII,Fourth,2024
+Andres Garcia,Greenville University,VIII,Fourth,2024
+Jerry Smazil,Illinois Wesleyan University,VIII,Fourth,2024
+Jared Urueta,North Central College,VIII,Fourth,2024
+Branden Dolezal,Aurora University,VIII,Fourth,2024
+Josh Gonzaga,Carroll University (Wis.),VIII,Fourth,2024
+Scott Price,Webster University,VIII,Fourth,2024
+Alex Parades,University of Wisconsin-Superior,IX,First,2024
+Jared Hecht,Gustavus Adolphus College,IX,First,2024
+Nick Kent,Macalester College,IX,First,2024
+Carson Kowalski,University of Wisconsin-Eau Claire,IX,First,2024
+Josh Bellamy,University of Wisconsin-Superior,IX,First,2024
+Danny Gutzwiller,University of Wisconsin-Platteville,IX,First,2024
+Owen Johnson,Gustavus Adolphus College,IX,First,2024
+Shea Bechtel,St. Olaf College,IX,First,2024
+Nathan Donovan,University of Wisconsin-Eau Claire,IX,First,2024
+Hans Haenicke,Macalester College,IX,First,2024
+Jake Kidd,University of Wisconsin-Superior,IX,First,2024
+Seth Aiken,University of Wisconsin-Platteville,IX,Second,2024
+Harry Ambler,University of Wisconsin-Superior,IX,Second,2024
+Spencer Skjeldestad,Gustavus Adolphus College,IX,Second,2024
+Alex Wano,University of Wisconsin-Platteville,IX,Second,2024
+Kasden Blattman,Macalester College,IX,Second,2024
+Tate McDermott,University of Wisconsin-Eau Claire,IX,Second,2024
+Joseph Swallen,Augsburg University,IX,Second,2024
+Daniel Almeida,Bethany Lutheran College,IX,Second,2024
+Mizael Harris,Augsburg University,IX,Second,2024
+Tyler Schiltz,Illinois College,IX,Second,2024
+Javier Pastor Valls,Luther College,IX,Second,2024
+Daniel Sessler,Saint Mary's University of Minnesota,IX,Third,2024
+Ben Beckman,St. Olaf College,IX,Third,2024
+Jessie Juarez,Hamline University,IX,Third,2024
+Curtis Ratzer,Wartburg College,IX,Third,2024
+Ryan Bechtel,St. Olaf College,IX,Third,2024
+Sam McDevitt,Wartburg College,IX,Third,2024
+Briggs Priem,Carleton College,IX,Third,2024
+Ryder Tomlinson Sterud,Hamline University,IX,Third,2024
+Ethan Dietrich,University of Wisconsin-Platteville,IX,Third,2024
+Joe Flory,Gustavus Adolphus College,IX,Third,2024
+Ronaldo Ordaz,Simpson College,IX,Third,2024
+Evan Siefken,Saint John's University,IX,Fourth,2024
+Tim Deloye,University of Northwestern-St.,IX,Fourth,2024
+Aidan Hillis,St. Olaf College,IX,Fourth,2024
+Remus Repcak,Augsburg University,IX,Fourth,2024
+Hayden Saul,University of Wisconsin-Whitewater,IX,Fourth,2024
+Bryan Basinger,Loras College,IX,Fourth,2024
+Owen Flanagan,Carleton College,IX,Fourth,2024
+Freddy Watson,University of Wisconsin-Superior,IX,Fourth,2024
+Gio Diaz,Lake Forest College,IX,Fourth,2024
+Aidan Mott,Wartburg College,IX,Fourth,2024
+Andre Robertson,Ripon College,IX,Fourth,2024
+Alex Wolter,Colorado College,X,First,2024
+Curtis Hale,Colorado College,X,First,2024
+Rex Karjian,Colorado College,X,First,2024
+JonConnor Rule,Trinity University (Texas),X,First,2024
+Will Bavier,Colorado College,X,First,2024
+Louis Instrall,Trinity University (Texas),X,First,2024
+Jack Manke,Texas Lutheran University,X,First,2024
+Rafael Otero,Claremont-McKenna-Scripps Colleges,X,First,2024
+Alexander Ward,Colorado College,X,First,2024
+Hunter Cain,Trinity University (Texas),X,First,2024
+Adam Knutson,Trinity University (Texas),X,First,2024
+Phillip Kostenko,University of Redlands,X,First,2024
+Brady Bachman,University of Redlands,X,Second,2024
+Owen Jamieson,University of Redlands,X,Second,2024
+Diego Roman,Texas Lutheran University,X,Second,2024
+Raghav Sharma,Southwestern University,X,Second,2024
+Maxwell Winneker,Hardin-Simmons University,X,Second,2024
+Cody Bell,University of Redlands,X,Second,2024
+Etienne Casanova,California Institute of Technology,X,Second,2024
+Michael Grimm,Southwestern University,X,Second,2024
+Erick Lopez,Texas Lutheran University,X,Second,2024
+Jakob Fiol,Hardin-Simmons University,X,Second,2024
+Trevor Thompson,Pacific Lutheran University,X,Second,2024
+Adan Villarreal,University of La Verne,X,Second,2024
+Ryan Grady,Middlebury College,I,First,2023
+Ben Clark-Eden,Amherst College,I,First,2023
+Max Clivio,Tufts University,I,First,2023
+Luke Madden,Middlebury College,I,First,2023
+Julian Juantorena,Bowdoin College,I,First,2023
+Luke Peplowski,Hamilton College,I,First,2023
+Daniel Yanez,Tufts University,I,First,2023
+John Arruda,University of Massachusetts-Boston,I,First,2023
+Ada Okorogheye,Amherst College,I,First,2023
+Jordan Saint-Louis,Middlebury College,I,First,2023
+Matt Scoffone,Connecticut College,I,First,2023
+Peter Silvester,Connecticut College,I,Second,2023
+Jonathan Baker,Johnson & Wales University,I,Second,2023
+Marco Cerezo,Connecticut College,I,Second,2023
+Diego Gisholt,University of Massachusetts-Boston,I,Second,2023
+Will Wood,Saint Joseph's College (Maine),I,Second,2023
+Abus Mohamed Ali,SUNY Polytechnic Institute,I,Second,2023
+Aidan Bagley,Johnson & Wales University,I,Second,2023
+Ignacio Cubeddu,Amherst College,I,Second,2023
+Ryan Lima,University of Massachusetts-Boston,I,Second,2023
+Mikey Brady,Tufts University,I,Second,2023
+Mohammad Nuhu,Amherst College,I,Second,2023
+Walker White,Babson College,II,First,2023
+Ryan Bell,Wheaton College (Mass.),II,First,2023
+Ryan Kim,Babson College,II,First,2023
+Niall Shea,Roger Williams University,II,First,2023
+Ryan Grund,Babson College,II,First,2023
+Robert Lloyd,Wheaton College (Mass.),II,First,2023
+Luke Savoie,Worcester Polytechnic Institute,II,First,2023
+Louis Gazo,Babson College,II,First,2023
+Francesco Valagussa,Worcester Polytechnic Institute,II,First,2023
+Benji Wright,Gordon College,II,First,2023
+Vanilton Xavier,Salem State College,II,First,2023
+Will Russell,Bridgewater State University,II,Second,2023
+James Meli,Salem State College,II,Second,2023
+Jude Sargent,United States Coast Guard Academy,II,Second,2023
+Casey Torres,Gordon College,II,Second,2023
+Tiago Frazao,Endicott College,II,Second,2023
+Garrett Robinson,Massachusetts Institute of Technology,II,Second,2023
+Brendan Walsh,Salem State College,II,Second,2023
+Jordan Borges,Salve Regina University,II,Second,2023
+Lucas Drons,Curry College,II,Second,2023
+David Nelson,Bridgewater State University,II,Second,2023
+Brady Sorensen,Suffolk University,II,Second,2023
+Ben Woelfinger,St. Lawrence University,III,First,2023
+Kol Bassuk,University of Rochester,III,First,2023
+John Bernardi,SUNY Oneonta,III,First,2023
+Connor Koschineg,Hobart College,III,First,2023
+Russ Domm,College at Brockport,III,First,2023
+Owen Fauth,Vassar College,III,First,2023
+Mateo Marra,SUNY Cortland,III,First,2023
+Jack Coleman,SUNY Cortland,III,First,2023
+Diego Rivera,Buffalo State College,III,First,2023
+Matt Shultz,SUNY Cortland,III,First,2023
+Ali Somow,SUNY Oneonta,III,First,2023
+Andrew Taylor,College at Brockport,III,Second,2023
+Brian Coughlan,Plattsburgh State University,III,Second,2023
+Alex Lessman,SUNY Cortland,III,Second,2023
+Owen McGarrity,SUNY New Paltz,III,Second,2023
+Joe Vogt,SUNY Geneseo,III,Second,2023
+Joseph DiPreta,SUNY New Paltz,III,Second,2023
+Michael McDougald,St. Lawrence University,III,Second,2023
+Ian Zingaro,SUNY Oneonta,III,Second,2023
+Josh Gaudiano,Rensselaer Polytechnic Institute,III,Second,2023
+Martin Harguindey,Elmira College,III,Second,2023
+Frederick Madsen,Hobart College,III,Second,2023
+Max Mogul,St. Lawrence University,III,Second,2023
+Justin Cross,Stevens Institute of Technology,IV,First,2023
+Ian Chesney,Montclair State University,IV,First,2023
+Logan Hicks,Lebanon Valley College,IV,First,2023
+Fritz Kabeiseman,Stevens Institute of Technology,IV,First,2023
+Bruno Andino,Stevens Institute of Technology,IV,First,2023
+Aiden Hoenisch,Stockton University,IV,First,2023
+Owen Murphy,Montclair State University,IV,First,2023
+Lucas Strange,Lebanon Valley College,IV,First,2023
+Amer Lukovic,Montclair State University,IV,First,2023
+Nathan Prex,Lebanon Valley College,IV,First,2023
+Johnny Troiano,Rowan University,IV,First,2023
+Dominic Ridge,Kean University,IV,Second,2023
+Drew Weaver,Misericordia University,IV,Second,2023
+Nick Yurcho,Rutgers University-Camden,IV,Second,2023
+Eljo Agolli,Penn State University-Abington,IV,Second,2023
+Davide Caputo,Rowan University,IV,Second,2023
+Osbin Mendez,Montclair State University,IV,Second,2023
+Diego Trujillo,Fairleigh Dickinson University-Florham,IV,Second,2023
+Luca Campbell,Stevens Institute of Technology,IV,Second,2023
+Zachary Glime,St. Mary's College of Maryland,IV,Second,2023
+Sadeki Roberts,Kean University,IV,Second,2023
+Shane Keenan,Montclair State University,IV,Third,2023
+Anthony Pinto,Washington College,V,First,2023
+Christopher Comber,Washington College,V,First,2023
+Ben Vollmer,Messiah University,V,First,2023
+Brayden Wise,Lycoming College,V,First,2023
+Koa Kaliebe,Franklin & Marshall College,V,First,2023
+Kevin Kiernan,Drew University,V,First,2023
+Jarec Morlote,Messiah University,V,First,2023
+Chris Richards,Muhlenberg College,V,First,2023
+Sean Fatiga,Widener University,V,First,2023
+Oscar Horwitz,Franklin & Marshall College,V,First,2023
+Matt McDonald,Messiah University,V,First,2023
+Adam Carter,Messiah University,V,Second,2023
+Connor Anderko,Franklin & Marshall College,V,Second,2023
+Mudi Jagha,Catholic University of America,V,Second,2023
+Francis Meyer,Johns Hopkins University,V,Second,2023
+Domenico Caltabiano,Catholic University of America,V,Second,2023
+Pedro Guizardi,Elizabethtown College,V,Second,2023
+Tino Puentes,Drew University,V,Second,2023
+Taylan Akdag,Muhlenberg College,V,Second,2023
+Gordie Bernlohr,Catholic University of America,V,Second,2023
+Griffin Meyer,Johns Hopkins University,V,Second,2023
+Leonardo Torres,Marymount University,V,Second,2023
+Ben Mulford,Muhlenberg College,V,Third,2023
+Will Joseph,Washington & Lee University,VI,First,2023
+Daniel Amah,Oglethorpe University,VI,First,2023
+PJ Ryan,Washington & Lee University,VI,First,2023
+Benjamin Velasquez,University of Lynchburg,VI,First,2023
+Gabe Francesconi,University of Mary Washington,VI,First,2023
+Alex Moody,Virginia Wesleyan University,VI,First,2023
+Jesus Tadeo,Rhodes College,VI,First,2023
+Weyimi Agbeyegbe,Washington & Lee University,VI,First,2023
+Ben Alram,Oglethorpe University,VI,First,2023
+Carter Berg,University of Mary Washington,VI,First,2023
+Josh Kirkland,University of Mary Washington,VI,First,2023
+Luke Mega,University of Lynchburg,VI,First,2023
+Peter Wagner,Emory University,VI,Second,2023
+Jake Atallah,Emory University,VI,Second,2023
+Eli Pilcher,Rhodes College,VI,Second,2023
+Kyle Stenzel,Christopher Newport University,VI,Second,2023
+Nathan Terrell,University of Mary Washington,VI,Second,2023
+Carter Averette,University of Lynchburg,VI,Second,2023
+Mason Field,Christopher Newport University,VI,Second,2023
+Alejandro Gomez,Emory University,VI,Second,2023
+Nathan Yared,Shenendoah University,VI,Second,2023
+Colton Myers,Emory University,VI,Second,2023
+Kade Thuenissen,Covenant College,VI,Second,2023
+Freddy Rogers,University of Mary Washington,VI,Third,2023
+Josh Condit,Virginia Wesleyan University,VI,Third,2023
+Noah Putman,Maryville College,VI,Third,2023
+Parker Rody,Covenant College,VI,Third,2023
+Barry Jones,Christopher Newport University,VI,Third,2023
+Sota Ippongi,Centre College,VI,Third,2023
+Grant McCarty,Washington & Lee University,VI,Third,2023
+Manzi Shalita,University of Lynchburg,VI,Third,2023
+JR Cozine,Oglethorpe University,VI,Third,2023
+Leho Le Louarn,North Carolina Wesleyan University,VI,Third,2023
+Mo Wumpini,Hampden-Sydney College,VI,Third,2023
+Mason Taylor,Ohio Wesleyan University,VII,First,2023
+Aidan Burns,Kenyon College,VII,First,2023
+Jack Leahy,SUNY Alfred,VII,First,2023
+Brady West,Ohio Wesleyan University,VII,First,2023
+Eamon Dujakovic,Kenyon College,VII,First,2023
+Carter Hancock,University of Mount Union,VII,First,2023
+Caleb Urban,Rose-Hulman Institute of Technology,VII,First,2023
+Matthew Vatne,Case Western Reserve University,VII,First,2023
+Alem Duratovic,Kenyon College,VII,First,2023
+Jack Kossoudji,Capital University,VII,First,2023
+Harley Kruschwitz,Manchester University,VII,First,2023
+Garrett Potts,SUNY Alfred,VII,First,2023
+Casey Thompson,Otterbein University,VII,Second,2023
+Brenden Gervers,Ohio Northern University,VII,Second,2023
+Daniel Kalic,John Carroll University,VII,Second,2023
+Justin LeDonne,Penn State University-Behrend,VII,Second,2023
+Mark Wischmeyer,Otterbein University,VII,Second,2023
+Louis Bez,Mount Aloysius College,VII,Second,2023
+Zander Plizga,University of Pittsburgh-Greensburg,VII,Second,2023
+William Shaffer,Ohio Northern University,VII,Second,2023
+Juan Camacho,Mount Aloysius College,VII,Second,2023
+Lucas Cross,Franciscan University,VII,Second,2023
+Jamon McCort,University of Mount Union,VII,Second,2023
+Ryan Sommerfeld,Ohio Northern University,VII,Second,2023
+Sam York,Penn State University-Behrend,VII,Third,2023
+Peter Borger,Rose-Hulman Institute of Technology,VII,Third,2023
+Izac Coleman,John Carroll University,VII,Third,2023
+Chris Giglio,Denison University,VII,Third,2023
+Blake Cooper,Penn State University-Behrend,VII,Third,2023
+Wil Dunda,Geneva College,VII,Third,2023
+Kameron Kist,Denison University,VII,Third,2023
+Jaggar Brooker,Ohio Wesleyan University,VII,Third,2023
+Azavier Coppin,Chatham University,VII,Third,2023
+Chistopher Guerra,Ohio Wesleyan University,VII,Third,2023
+Will Isaac,Otterbein University,VII,Third,2023
+Jaden Wright,John Carroll University,VII,Third,2023
+Daniel Wunder,Calvin University,VIII,First,2023
+Dylan Alic,Dominican University (Ill.),VIII,First,2023
+Steven Arthur,Milwaukee School of Engineering,VIII,First,2023
+Colin Iverson,Calvin University,VIII,First,2023
+Oliver Akintade,Calvin University,VIII,First,2023
+Jacopo De Collibus,North Central College,VIII,First,2023
+Lyndon Hu,University of Chicago,VIII,First,2023
+Zach Thompson,Milwaukee School of Engineering,VIII,First,2023
+Enrique Gonzalez,Aurora University,VIII,First,2023
+Chris Schau,Calvin University,VIII,First,2023
+Aidan Westerberg,North Central College,VIII,First,2023
+Ryan Yetishefsky,University of Chicago,VIII,First,2023
+Jalen Depenbrock,Aurora University,VIII,Second,2023
+Edoardo Bonifacio,North Central College,VIII,Second,2023
+Jack Leuker,University of Chicago,VIII,Second,2023
+Cole Pauly,Hope College,VIII,Second,2023
+Jaziel Enriquez,Aurora University,VIII,Second,2023
+Oscar Montejano,Dominican University (Ill.),VIII,Second,2023
+Robbie Pino,University of Chicago,VIII,Second,2023
+Mickey Reilly,Carthage College,VIII,Second,2023
+Zach Thompson,Milwaukee School of Engineering,VIII,Second,2023
+Pryse Anderson,Wheaton College (Ill.),VIII,Second,2023
+Vicente Castro,Dominican University (Ill.),VIII,Second,2023
+Aidan Crowder,Carthage College,VIII,Second,2023
+Connor Dees,Milwaukee School of Engineering,VIII,Second,2023
+Puma Galvan,Wisconsin Lutheran College,VIII,Third,2023
+Nacho Diaz,Millikin University,VIII,Third,2023
+Hugo Neborg,North Park University,VIII,Third,2023
+Jack Leffel,Wisconsin Lutheran College,VIII,Third,2023
+Christian Vaaland,North Park University,VIII,Third,2023
+Owen Culver,Washington University (Mo.),VIII,Third,2023
+Jack Fairwood,North Central College,VIII,Third,2023
+Alex White,Calvin University,VIII,Third,2023
+Kyle Johnson,Wheaton College (Ill.),VIII,Third,2023
+Miguel Konde Gwo,Edgewood College,VIII,Third,2023
+Joe Meade,St. Norbert College,VIII,Third,2023
+Brennon Woody,Wartburg College,IX,First,2023
+Otis Anderson,Gustavus Adolphus College,IX,First,2023
+Justin Crawmer,Carleton College,IX,First,2023
+Curtis Ratzer,Wartburg College,IX,First,2023
+Paul Devine,Wartburg College,IX,First,2023
+Victor Gaulmin,St. Olaf College,IX,First,2023
+Trevor Jones,Carleton College,IX,First,2023
+Shea Bechtel,St. Olaf College,IX,First,2023
+Nathan Donovan,University of Wisconsin-Eau Claire,IX,First,2023
+Hakeem Morgan,St. Olaf College,IX,First,2023
+Ben Pennell,Carleton College,IX,First,2023
+Jamie Colvill,Northland College,IX,Second,2023
+Josh Bellamy,University of Wisconsin-Superior,IX,Second,2023
+Nick Kent,Macalester College,IX,Second,2023
+Konrad Ziaja,University of Wisconsin-Platteville,IX,Second,2023
+Danny Gutzwiller,University of Wisconsin-Platteville,IX,Second,2023
+Owen Johnson,Gustavus Adolphus College,IX,Second,2023
+Peyton Nichols,University of Wisconsin-Whitewater,IX,Second,2023
+Hans Haenicke,Macalester College,IX,Second,2023
+Mizael Harris,Augsburg University,IX,Second,2023
+Reed Milklavic,Loras College,IX,Second,2023
+Wesley Sanders,Gustavus Adolphus College,IX,Third,2023
+Seth Lawrence,University of Redlands,X,First,2023
+Skylar Darwen,University of Redlands,X,First,2023
+Curtis Hale,Colorado College,X,First,2023
+Evan Karp,Occidental College,X,First,2023
+Jarette Barajas,University of Redlands,X,First,2023
+Etienne Casanova,California Institute of Technology,X,First,2023
+Craig Johnson,Pacific Lutheran University,X,First,2023
+Jack Manke,Texas Lutheran University,X,First,2023
+Chen Adjei,Trinity University (Texas),X,First,2023
+Michael Meese,Trinity University (Texas),X,First,2023
+Andrew Notter,Occidental College,X,First,2023
+Nick Gaston,Pacific Lutheran University,X,Second,2023
+Pieter Blank,Trinity University (Texas),X,Second,2023
+Tyler Sherard,California Lutheran University,X,Second,2023
+Alex White,Pacific Lutheran University,X,Second,2023
+Will Bavier,Colorado College,X,Second,2023
+Louis Instrall,Trinity University (Texas),X,Second,2023
+Joey Schwartz,Occidental College,X,Second,2023
+Sawyer Young,University of Mary Hardin-Baylor,X,Second,2023
+Cole Friesen,Whitworth University,X,Second,2023
+Ishaan Mantripragada,California Institute of Technology,X,Second,2023
+Trevor Thompson,Pacific Lutheran University,X,Second,2023
+Riley Nyhan,Occidental College,X,Third,2023
+Michael Webber,Bowdoin College,I,First,2022
+Nick Boardman,Williams College,I,First,2022
+Ian Daly,Tufts University,I,First,2022
+Filipe Dutra,Western Connecticut State,I,First,2022
+Dylan Reid,Bowdoin College,I,First,2022
+Mamadi Jiana,Norwich University,I,First,2022
+Julian Juantoreana,Bowdoin College,I,First,2022
+Pandelis Margaronis,Hamilton College,I,First,2022
+Ada Okorogheye,Amherst College,I,First,2022
+Jordan Saint-Louis,Middlebury College,I,First,2022
+Joseph Thongsythavong,Norwich University,I,First,2022
+Hayes Estrella,University of Southern Maine,I,Second,2022
+Ben Clark-Eden,Amherst College,I,Second,2022
+Kameron Jorgenson,Norwich University,I,Second,2022
+Larson Richards,Eastern Connecticut State University,I,Second,2022
+Payton Blynn,Western Connecticut State,I,Second,2022
+Alec Erskine,Emmanuel College,I,Second,2022
+Michael Torres,University of St. Joseph (Conn.),I,Second,2022
+Steve Yeonas,Connecticut College,I,Second,2022
+Faisal Abdallah,Plymouth State University,I,Second,2022
+Tife Agunloye,Bates College,I,Second,2022
+Austin Ward,Saint Joseph's College of Maine,I,Second,2022
+Ben Diffley,Williams College,I,Third,2022
+Walker White,Babson College,II,First,2022
+Evan Arpin,Salve Regina University,II,First,2022
+Patrick Filetti,Salem State College,II,First,2022
+Liam Hanlon,Babson College,II,First,2022
+Javier Beltran,Roger Williams University,II,First,2022
+Mitch Collins,Babson College,II,First,2022
+Bryce Nardizzi,Framingham State University,II,First,2022
+Jordan Borges,Salve Regina University,II,First,2022
+Alasdair Ferrier,Wheaton College (Mass.),II,First,2022
+Joe Mepham,Endicott College,II,First,2022
+Ben Williams,Babson College,II,First,2022
+Jack Avellar,Roger Williams University,II,Second,2022
+Cade Mallett,Emerson College,II,Second,2022
+Niall Shea,Roger Williams University,II,Second,2022
+Jude Sargent,United States Coast Guard Academy,II,Second,2022
+Tiago Frazao,Endicott College,II,Second,2022
+Aidan Ferguson,Emerson College,II,Second,2022
+John Flood,United States Coast Guard Academy,II,Second,2022
+Robert Lloyd,Wheaton College (Mass.),II,Second,2022
+Luke Savoie,Worcester Polytechnic Institute,II,Second,2022
+Brady Sorensen,Suffolk University,II,Second,2022
+Ethan Fitzsimmons,Emerson College,II,Third,2022
+Nate Hanna,SUNY Oneonta,III,First,2022
+Tristan Battistoni,SUNY Oneonta,III,First,2022
+John Bernardi,SUNY Oneonta,III,First,2022
+Ian Blugh,SUNY Cortland,III,First,2022
+Joe Vogt,SUNY Geneseo,III,First,2022
+Russ Domm,SUNY Brockport,III,First,2022
+Mateo Marra,SUNY Cortland,III,First,2022
+Marvin Sibanda,St. Lawrence University,III,First,2022
+Ander Castillo,Medaille College,III,First,2022
+Lucas Fecci,SUNY Oneonta,III,First,2022
+Kamal Ibrahim,Skidmore College,III,First,2022
+Matthew Stefaniw,SUNY Brockport,III,First,2022
+Ben Woelfinger,St. Lawrence University,III,Second,2022
+Trevor Henderson,Manhattanville College,III,Second,2022
+Denton Henry,United States Merchant Marine,III,Second,2022
+Antonio Rogliano,St. Lawrence University,III,Second,2022
+Justin Arilotta,SUNY Geneseo,III,Second,2022
+Owen Fauth,Vassar College,III,Second,2022
+Ethan Fettaya,Yeshiva University,III,Second,2022
+Ian Zingaro,SUNY Oneonta,III,Second,2022
+Lucas Baredes,Yeshiva University,III,Second,2022
+Jack Coleman,SUNY Cortland,III,Second,2022
+Duncan Keker,Vassar College,III,Second,2022
+Sam Pijpers,St. Lawrence University,III,Second,2022
+Justin Silva,Farmingdale State College,III,Third,2022
+Daniel Berry,Vassar College,III,Third,2022
+Owen McGarrity,SUNY New Paltz,III,Third,2022
+Rodrigo Fernandez,Medaille College,III,Third,2022
+Ryan Lane,Vassar College,III,Third,2022
+Miles Levy,St. Lawrence University,III,Third,2022
+Michael Mezzina,Manhattanville College,III,Third,2022
+Matthew Wyant,Mount Saint Mary College,III,Third,2022
+Randy Dickersbach,Rochester Institute Of Technology,III,Third,2022
+Victor Naci,St. Joseph's University Brooklyn,III,Third,2022
+Cuneyt Vardar,Nazareth College,III,Third,2022
+Justin Cross,Stevens Institute of Technology,IV,First,2022
+Mathew Barlow,St. Mary's College of Maryland,IV,First,2022
+Ian Chesney,Montclair State University,IV,First,2022
+Fredric Kabeiseman,Stevens Institute of Technology,IV,First,2022
+Bruno Andino,Stevens Institute of Technology,IV,First,2022
+Josiah Crawford,Montclair State University,IV,First,2022
+Chad Yates,Rowan University,IV,First,2022
+Franco Catania,Rutgers University-Newark,IV,First,2022
+Amer Lukovic,Montclair State University,IV,First,2022
+Adam Silva,Stevens Institute of Technology,IV,First,2022
+Arkan Tahsildaroglu,New York University,IV,First,2022
+Shane Keenan,Montclair State University,IV,Second,2022
+James McCombs,Stockton University,IV,Second,2022
+Osbin Mendez,Ramapo College,IV,Second,2022
+Drew Weaver,Misericordia University,IV,Second,2022
+Brayden Wise,Lycoming College,IV,Second,2022
+Joe Alba,Rutgers University-Newark,IV,Second,2022
+Kobe Harris,Penn State University Harrisburg,IV,Second,2022
+Sean Masur,Stevens Institute of Technology,IV,Second,2022
+Max Gariano,Misericordia University,IV,Second,2022
+Alex Ochman,St. Mary's College of Maryland,IV,Second,2022
+Kedric Yoder,Lancaster Bible College,IV,Second,2022
+Andrew Daubenspeck,Misericordia University,IV,Third,2022
+Alex Morget,Johns Hopkins University,V,First,2022
+Connor Anderko,Franklin & Marshall College,V,First,2022
+Jake Lent-Koop,Messiah University,V,First,2022
+Tim Treinen,Johns Hopkins University,V,First,2022
+Shay Adamson,Franklin & Marshall College,V,First,2022
+Domenico Caltabiano,Catholic University,V,First,2022
+Luke Groothoff,Messiah University,V,First,2022
+Chris Richards,Muhlenberg College,V,First,2022
+Sean Fatiga,Widener University,V,First,2022
+Matt McDonald,Messiah University,V,First,2022
+Darius Siahpoosh,Catholic University,V,First,2022
+Leonardo Torres,Marymount University,V,First,2022
+Jared Pavlovich,Messiah University,V,Second,2022
+Owen Maher,Catholic University,V,Second,2022
+Ali Nakhid,Goucher College,V,Second,2022
+Eddie Rainey,Elizabethtown College,V,Second,2022
+Moses Beers,Cairn University,V,Second,2022
+Francis Meyer,Johns Hopkins University,V,Second,2022
+Tino Puentes,Drew University,V,Second,2022
+Ian Whamond,Johns Hopkins University,V,Second,2022
+Taylan Akdag,Muhlenberg College,V,Second,2022
+Jack Carroll,Gettysburg College,V,Second,2022
+Oscar Horowitz,Franklin & Marshall College,V,Second,2022
+Axel Whamond,Johns Hopkins University,V,Second,2022
+Sam Altman Farrell,Franklin & Marshall College,V,Third,2022
+Joshua Goodyear,Cairn University,V,Third,2022
+Brendan King,University of Scranton,V,Third,2022
+Isaac Mintz,Franklin & Marshall College,V,Third,2022
+Carlos Varona,Marymount University,V,Third,2022
+Pedro Guizardi,Elizabethown College,V,Third,2022
+Malher Santiago-Possu,Rosemont College,V,Third,2022
+Nick Starr,McDaniel College,V,Third,2022
+Jesse Brittain,Cairn University,V,Third,2022
+Ryan Cogill,Alvernia College,V,Third,2022
+Clayton Crosse,Rosemont College,V,Third,2022
+Athi Msiza,Gettysburg College,V,Third,2022
+Christian Tyson,Drew University,V,Third,2022
+JP Furman,Sewanee-University of the South,VI,First,2022
+Jay Patterson,Covenant College,VI,First,2022
+Zach Shunnarah,Sewanee-University of the South,VI,First,2022
+Tyler Smith,Washington & Lee University,VI,First,2022
+Henry Asbill,Berry College,VI,First,2022
+Carter Averette,University of Lynchburg,VI,First,2022
+Samuel Bass,Washington & Lee University,VI,First,2022
+Michael Kutsanzira,Washington & Lee University,VI,First,2022
+Weyimi Agbeyegbe,Washington & Lee University,VI,First,2022
+Enrique Hernandez,LaGrange College,VI,First,2022
+Coleman Jennings,Birmingham-Southern College,VI,First,2022
+Josh Kirkland,University of Mary Washington,VI,First,2022
+Luke Mega,University of Lynchburg,VI,First,2022
+Griffin Potter,Virginia Wesleyan University,VI,Second,2022
+Jacob Kautzman,University of Mary Washington,VI,Second,2022
+Elijah Lloyd,Randolph-Macon College,VI,Second,2022
+Eli Pilcher,Rhodes College,VI,Second,2022
+Zack Roberts,Hendrix College,VI,Second,2022
+James Yeboah,Bridgewater College,VI,Second,2022
+Dylan Berk,Roanoke College,VI,Second,2022
+Trey Hines,Birmingham-Southern College,VI,Second,2022
+Alex Moody,Virginia Wesleyan University,VI,Second,2022
+Kyle Stenzel,Christopher Newport University,VI,Second,2022
+Carter Berg,University of Mary Washington,VI,Second,2022
+Jorge Lemus,William Peace University,VI,Second,2022
+Jesus Tadeo,Rhodes College,VI,Second,2022
+Mitchell Fenton,Rhodes College,VI,Third,2022
+Rush Campbell,William Peace University,VI,Third,2022
+Sebastian Quiroz-Gutierrez,University of Lynchburg,VI,Third,2022
+Chris Jerrild,Roanoke College,VI,Third,2022
+TJ Hurd,William Peace University,VI,Third,2022
+Tracy Moon,Berry College,VI,Third,2022
+Manzi Shalita,University of Lynchburg,VI,Third,2022
+Blake Webb,LaGrange College,VI,Third,2022
+William Bryan,Maryville College,VI,Third,2022
+Nathan Carlson,Berry College,VI,Third,2022
+Trevor Reichman,Sewanee-University of the South,VI,Third,2022
+Mason Taylor,Ohio Wesleyan University,VII,First,2022
+Zach Buvalic,Rose-Hulman Institute of Technology,VII,First,2022
+Izac Coleman,John Carroll University,VII,First,2022
+Luke Muther,Kenyon College,VII,First,2022
+Cristian Gomez,Ohio Wesleyan University,VII,First,2022
+Levi King,Ohio Northern University,VII,First,2022
+Scott Upton,Kenyon College,VII,First,2022
+Caleb Urban,Rose-Hulman Institute of Technology,VII,First,2022
+Matthew Vatne,Case Western Reserve University,VII,First,2022
+Samuel Belitz,Grove City College,VII,First,2022
+Will Isaac,Otterbein University,VII,First,2022
+Takezo Kelly,Rose-Hulman Institute of Technology,VII,First,2022
+Luciano Salemi,Hanover College,VII,Second,2022
+Sean Fleming,Hanover College,VII,Second,2022
+Justin LeDonne,Penn State University-Behrend,VII,Second,2022
+Ethan Marshall,Ohio Wesleyan University,VII,Second,2022
+Cole Sauer,Geneva College,VII,Second,2022
+Tyler Caterino,Westminster College (Pa.),VII,Second,2022
+Nick Miller,Franciscan University,VII,Second,2022
+Bruno Zamora,Wabash College,VII,Second,2022
+Caleb Castano,Wabash College,VII,Second,2022
+Elorm Dogbey,Wilmington College,VII,Second,2022
+Alem Duratovic,Kenyon College,VII,Second,2022
+Sebastian Gaese,Kenyon College,VII,Second,2022
+Sam York,Penn State University-Behrend,VII,Third,2022
+Jason Edmunds,Carnegie Mellon University,VII,Third,2022
+Nathan Neal,Otterbein University,VII,Third,2022
+Alexandru Rumleanschi,Case Western Reserve University,VII,Third,2022
+Brady West,Ohio Wesleyan University,VII,Third,2022
+Nick Felician,John Carroll University,VII,Third,2022
+Fernando Martin,Hanover College,VII,Third,2022
+Ethan Miracle,Denison University,VII,Third,2022
+Sean Atwater,Case Western Reserve University,VII,Third,2022
+Joao Domenici,Hanover College,VII,Third,2022
+Christopher Guerra,Ohio Wesleyan University,VII,Third,2022
+Puma Galvan,Wisconsin Lutheran College,VIII,First,2022
+Steven Arthur,Milwaukee School of Engineering,VIII,First,2022
+Richard Gillespie,University of Chicago,VIII,First,2022
+Johnny Kraemer,North Central College,VIII,First,2022
+Griffin Wada,University of Chicago,VIII,First,2022
+Oliver Akintade,Calvin University,VIII,First,2022
+Lyndon Hu,University of Chicago,VIII,First,2022
+Aidan Westerberg,North Central College,VIII,First,2022
+Jason Cano,Wisconsin Lutheran College,VIII,First,2022
+Matteo Innocenti,North Central College,VIII,First,2022
+Aahman Murvin,Webster University,VIII,First,2022
+Chris Schau,Calvin University,VIII,First,2022
+Daniel Wunder,Calvin University,VIII,Second,2022
+Tavis Cameron,Webster University,VIII,Second,2022
+Colin Iverson,Calvin University,VIII,Second,2022
+Joey Sopikiotis,Wheaton College (Ill.),VIII,Second,2022
+Angel Barriga,North Park University,VIII,Second,2022
+Alessandro D'Argento,Wheaton College (Ill.),VIII,Second,2022
+Mickey Reilly,Carthage College,VIII,Second,2022
+Mason Smith,Calvin University,VIII,Second,2022
+John Cronnolly,Dominican University,VIII,Second,2022
+Isak Flo,North Park University,VIII,Second,2022
+Jared McPeek,Greenville University,VIII,Second,2022
+Wesley Sanders,Gustavus Adolphus College,IX,First,2022
+Ethan Andersen,University of Wisconsin-Eau Claire,IX,First,2022
+Otis Anderson,Gustavus Adolphus College,IX,First,2022
+Liam Peterson,Bethany Lutheran College,IX,First,2022
+Robi Buzakovic,St. Olaf College,IX,First,2022
+Victor Gaulmin,St. Olaf College,IX,First,2022
+Owen Johnson,Gustavus Adolphus College,IX,First,2022
+Shea Bechtel,St. Olaf College,IX,First,2022
+Nathan Donovan,University of Wisconsin-Eau Claire,IX,First,2022
+Blake Perry,University of Wisconsin-Superior,IX,First,2022
+Marcos Vila,Luther College,IX,First,2022
+Spencer Banks,University of Wisconsin-Eau Claire,IX,Second,2022
+Josh Bellamy,University of Wisconsin-Superior,IX,Second,2022
+Michael Brandt,Loras College,IX,Second,2022
+Drew Collins,Augsburg University,IX,Second,2022
+Baraka Ellie,Simpson College,IX,Second,2022
+Antonio Lima,Bethany Lutheran College,IX,Second,2022
+Nick Zuchowski,Augsburg University,IX,Second,2022
+Jack Gentilli,University of Wisconsin-Platteville,IX,Second,2022
+Jalen Holly,University of Wisconsin-Whitewater,IX,Second,2022
+Casey McCloskey,St. Olaf College,IX,Second,2022
+Will Overberg,Luther College,IX,Second,2022
+Evan Siefken,Saint John's University,IX,Third,2022
+Jack Viles,Southwestern University,X,First,2022
+Drew Alexander,Willamette University,X,First,2022
+Hamilton Estrada,University of Saint Thomas (Texas),X,First,2022
+Curtis Hale,Colorado College,X,First,2022
+Pierce Gallaway,Willamette University,X,First,2022
+Craig Johnson,Pacific Lutheran University,X,First,2022
+Nick Villanueva,University of Mary Hardin-Baylor,X,First,2022
+Jesus Aleman,University of Saint Thomas (Texas),X,First,2022
+Daniel Castro,University of Saint Thomas (Texas),X,First,2022
+Luis Green,Texas Lutheran University,X,First,2022
+Aidan Wall,Chapman University,X,First,2022
+Nick Gaston,Pacific Lutheran University,X,Second,2022
+Reagan Fortner,Southwestern University,X,Second,2022
+Evan Karp,Occidental College,X,Second,2022
+JonConnor Rule,Trinity University (Texas),X,Second,2022
+Matthew Carlson,Pomona-Pitzer Colleges,X,Second,2022
+Ethan Kovach,University of Redlands,X,Second,2022
+Melvin Molina,Concordia University (Texas),X,Second,2022
+Sean Kim,Willamette University,X,Second,2022
+Cris Lozano,Pacific Lutheran University,X,Second,2022
+Riley O'Donnell,University of Texas-Dallas,X,Second,2022
+Trevor Thompson,Pacific Lutheran University,X,Second,2022
+Pierluca Carnovale,Willamette University,X,Third,2022

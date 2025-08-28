@@ -5,7 +5,7 @@
 #   # pip install google-search-results  (and set SERPAPI_KEY)
 #   python scrape_player.py "Abdirasak Bulale" "St. Olaf College"
 
-import asyncio, re, os, json
+import asyncio, re, os, json, csv
 from typing import Optional, Dict, Any, List, Tuple
 import httpx
 from bs4 import BeautifulSoup
@@ -19,6 +19,48 @@ DEFAULT_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 TIMEOUT = httpx.Timeout(20.0)
+
+# Load accolades data
+def load_accolades_data() -> Dict[str, List[Dict[str, str]]]:
+    """Load accolades data from CSV files."""
+    accolades = {}
+    try:
+        # Load All-Region data from the new CSV
+        with open('all_region.csv', 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            accolades['all_region'] = []
+            for row in reader:
+                accolades['all_region'].append({
+                    'name': row['Player Name'],
+                    'school': row['School Name'],
+                    'region': row['Region'],
+                    'team': row['Team'],
+                    'year': row['Year']
+                })
+    except FileNotFoundError:
+        print("DEBUG: all_region.csv file not found")
+        accolades['all_region'] = []
+    
+    return accolades
+
+def find_player_accolades(player_name: str, school: str, accolades_data: Dict[str, List[Dict[str, str]]]) -> List[str]:
+    """Find accolades for a given player."""
+    found_accolades = []
+    
+    # Search through all-region data
+    for accolade in accolades_data.get('all_region', []):
+        # Use fuzzy matching to find the player
+        name_match_score = fuzz.token_set_ratio(player_name.lower(), accolade['name'].lower())
+        
+        if name_match_score >= 85:  # High confidence match
+            # Format: "2024 Third Team All-Region IX"
+            year = accolade['year']
+            team_name = accolade['team'].title()  # Capitalize first letter
+            region_num = accolade['region']
+            accolade_text = f"{year} {team_name} Team All-Region {region_num}"
+            found_accolades.append(accolade_text)
+    
+    return found_accolades
 
 SCHOOL_TO_ATHLETICS = {
     "st. olaf college": "athletics.stolaf.edu",
@@ -468,6 +510,11 @@ async def find_and_scrape(name: str, school: str, sport_path: str = SPORT_PATH) 
             )
             data = {"url": str(r.url), "provider": provider, "name": inferred_name}
 
+        # Load accolades data and search for matches
+        accolades_data = load_accolades_data()
+        found_accolades = find_player_accolades(data.get("name", name), school, accolades_data)
+        data["accolades"] = found_accolades
+
         data.update({
             "found": True,
             "input": {"name": name, "school": school, "sport_path": sport_path},
@@ -552,8 +599,20 @@ if __name__ == "__main__":
             
             # Print career totals
             print(f"Total\t{total_gp}\t{total_gs}\t{total_g}\t{total_a}\t{total_pts}\t{total_sh}\t{total_sh_pct}\t{total_sog}\t{total_sog_pct}\t{total_gw}\t0-0\t{total_min}")
+        
+        # Print accolades
+        accolades = result.get("accolades", [])
+        if accolades:
+            print()
+            print("Accolades")
+            for accolade in accolades:
+                print(f"• {accolade}")
         else:
-            print("No statistics available.")
+            print()
+            print("Accolades")
+            print("No accolades found.")
     else:
-        print(f"Player not found: {result.get('reason', 'Unknown error')}")
-        print(json.dumps(result, indent=2, ensure_ascii=False))
+        print("No statistics available.")
+else:
+    print(f"Player not found: {result.get('reason', 'Unknown error')}")
+    print(json.dumps(result, indent=2, ensure_ascii=False))
