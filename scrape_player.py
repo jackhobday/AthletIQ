@@ -41,6 +41,22 @@ def load_accolades_data() -> Dict[str, List[Dict[str, str]]]:
         print("DEBUG: all_region.csv file not found")
         accolades['all_region'] = []
     
+    try:
+        # Load All-American data from the new CSV
+        with open('all_american.csv', 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            accolades['all_american'] = []
+            for row in reader:
+                accolades['all_american'].append({
+                    'name': row['Player Name'],
+                    'school': row['School Name'],
+                    'team': row['Team'],
+                    'year': row['Year']
+                })
+    except FileNotFoundError:
+        print("DEBUG: all_american.csv file not found")
+        accolades['all_american'] = []
+    
     return accolades
 
 def find_player_accolades(player_name: str, school: str, accolades_data: Dict[str, List[Dict[str, str]]]) -> List[str]:
@@ -58,6 +74,18 @@ def find_player_accolades(player_name: str, school: str, accolades_data: Dict[st
             team_name = accolade['team'].title()  # Capitalize first letter
             region_num = accolade['region']
             accolade_text = f"{year} {team_name} Team All-Region {region_num}"
+            found_accolades.append(accolade_text)
+    
+    # Search through all-american data
+    for accolade in accolades_data.get('all_american', []):
+        # Use fuzzy matching to find the player
+        name_match_score = fuzz.token_set_ratio(player_name.lower(), accolade['name'].lower())
+        
+        if name_match_score >= 85:  # High confidence match
+            # Format: "2024 First Team All-American"
+            year = accolade['year']
+            team_name = accolade['team'].title()  # Capitalize first letter
+            accolade_text = f"{year} {team_name} Team All-American"
             found_accolades.append(accolade_text)
     
     return found_accolades
