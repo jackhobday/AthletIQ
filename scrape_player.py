@@ -57,6 +57,22 @@ def load_accolades_data() -> Dict[str, List[Dict[str, str]]]:
         print("DEBUG: all_american.csv file not found")
         accolades['all_american'] = []
     
+    try:
+        # Load All-MIAC data from the new CSV
+        with open('all_miac.csv', 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            accolades['all_miac'] = []
+            for row in reader:
+                accolades['all_miac'].append({
+                    'name': row['Player Name'],
+                    'school': row['School Name'],
+                    'team': row['Team'],
+                    'year': row['Year']
+                })
+    except FileNotFoundError:
+        print("DEBUG: all_miac.csv file not found")
+        accolades['all_miac'] = []
+    
     return accolades
 
 def find_player_accolades(player_name: str, school: str, accolades_data: Dict[str, List[Dict[str, str]]]) -> List[str]:
@@ -86,6 +102,28 @@ def find_player_accolades(player_name: str, school: str, accolades_data: Dict[st
             year = accolade['year']
             team_name = accolade['team'].title()  # Capitalize first letter
             accolade_text = f"{year} {team_name} Team All-American"
+            found_accolades.append(accolade_text)
+    
+    # Search through all-miac data
+    for accolade in accolades_data.get('all_miac', []):
+        # Use fuzzy matching to find the player
+        name_match_score = fuzz.token_set_ratio(player_name.lower(), accolade['name'].lower())
+        
+        if name_match_score >= 85:  # High confidence match
+            # Format based on team type
+            year = accolade['year']
+            team_type = accolade['team']
+            
+            if team_type == "First":
+                accolade_text = f"{year} All-MIAC"
+            elif team_type == "Honorable Mention":
+                accolade_text = f"{year} All-MIAC Honorable Mention"
+            elif team_type == "Playoff":
+                accolade_text = f"{year} All-MIAC Playoff Team"
+            else:
+                # Fallback for any other team types
+                accolade_text = f"{year} All-MIAC {team_type}"
+            
             found_accolades.append(accolade_text)
     
     return found_accolades
